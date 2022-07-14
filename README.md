@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @clapForMe
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- this is @clapForMe
+- clap for me @ clapfor.me
+- CLAP FOR ME at here.
+
+expecting Clap for me ……
 
 <!---
 clapForMe/clapForMe is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -10,3 +10,5 @@ You can click the Preview link to take a look at your changes.
 --->
 
 clap for me.
+for project clapFor.me
+
