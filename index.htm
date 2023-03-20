@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ClapForMe | 事业支持平台</title>
+<style>
+@font-face {
+  font-family: rotor;
+  src: url("./rotor-VF.woff2") format("woff2-variations");
+}
+html {
+  --size: 99.9vw;
+  --loop: 5s;
+--blurTimeFloatValueTemp:0.8;
+--loopStopPos:5s;
+--screenTipsShadeOffLimits:30s;
+  --delay: 0.02;
+  --background1: #129681;
+  --background2: #085147;
+  --background3: #e01c82;
+  --color1: #ffebe5;
+  --color2: #ffd9ce;
+  font-family: rotor;
+  font-size: calc(var(--size) * 0.17);
+ /*  background: #282c37; */
+
+}
+
+body {
+  margin: 0;
+}
+
+.specific_spanInGlassFontCssSection {
+  background-image: radial-gradient(circle at 0% 110%, var(--background2), var(--background1)), radial-gradient(circle at 0% -30%, var(--background3), transparent);
+  background-blend-mode: screen;
+
+ opacity: 0;
+
+	-webkit-animation: screenGlassFogTipsDisplayShow var(--screenTipsShadeOffLimits) ease-in normal 1;
+	animation: screenGlassFogTipsDisplayShow var(--screenTipsShadeOffLimits) ease-in normal 1;
+	
+}
+
+.specific_spanInGlassFontCssText {
+  width: var(--size);
+  height: 100vh;
+  display: flex;
+font-size:10vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  background-color: #000;
+  background-image: repeating-radial-gradient(circle at 120% 110%, #000 10px, #333 20px), repeating-radial-gradient(circle at -20% 30%, #000 10px, #333 20px);
+  background-blend-mode: screen;
+  filter: contrast(5);
+  mix-blend-mode: lighten;
+}
+
+.specific_spanInGlassFontCss {
+  -webkit-animation: text var(--loop) ease-in normal 4;
+          animation: text var(--loop) ease-in normal 4;
+}
+
+
+@-webkit-keyframes text {
+0% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+  10% {
+    font-weight: 900;
+    font-variation-settings: "RTTX" 0, "DPTH" 12, "OFST" 0;
+    scale: 1;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.005));
+    color: var(--color1);
+  }
+70% {
+    font-weight: 900;
+    font-variation-settings: "RTTX" 0, "DPTH" 12, "OFST" 0;
+    scale: 1;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.005));
+    color: var(--color1);
+  }
+  89% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+  90% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(0) * 0.06));
+    color: var(--color2);
+  }
+  100% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+}
+
+@keyframes text {
+0% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+  10% {
+    font-weight: 900;
+    font-variation-settings: "RTTX" 0, "DPTH" 12, "OFST" 0;
+    scale: 1;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.005));
+    color: var(--color1);
+  }
+70% {
+    font-weight: 900;
+    font-variation-settings: "RTTX" 0, "DPTH" 12, "OFST" 0;
+    scale: 1;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.005));
+    color: var(--color1);
+  }
+  89% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+  90% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(0) * 0.06));
+    color: var(--color2);
+  }
+  100% {
+    font-weight: 100;
+    font-variation-settings: "RTTX" 180, "DPTH" 12, "OFST" 0;
+    scale: 1.5;
+    filter: blur(calc(var(--size) * blurTimeFloatValueTemp  0.06));
+    color: var(--color2);
+  }
+}
+
+
+
+@-webkit-keyframes screenGlassFogTipsDisplayShow {
+0% {
+    opacity: 0;
+  }
+1% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+
+100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes screenGlassFogTipsDisplayShow {
+0% {
+    opacity: 0;
+  }
+1% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+
+100% {
+    opacity: 0;
+  }
+
+}
+</style>
+<script>
+function specific_cssShow_thirdPartModule_glassFogFontFullScreenShow(id,listLaterTime=0)
+{
+const text = document.getElementById(id);
+var chars = text.innerText.split("");
+var newText = "";
+for (char in chars) {
+	newText = newText + `<span class="specific_spanInGlassFontCss" style="-webkit-animation-delay: calc(var(--loopStopPos) * -1 + ${(1.0*parseInt(listLaterTime))}s + (var(--loopStopPos) * var(--delay) * ${(1.0*parseInt(char))}));animation-delay: calc(var(--loopStopPos) * -1 + ${(1.0*parseInt(listLaterTime))}s  + (var(--loopStopPos) * var(--delay) * ${(1.0*parseInt(char))}));">${chars[char]}</span>`;
+}
+text.innerHTML = newText;
+}
+</script>
+<link rel="prerender" href="https://come.clapFor.me/search/" />
+<meta id="specific_meta_equiv_forLinkJumpToV1" http-equiv="" content="">
+	<script>
+		document.addEventListener("DOMContentLoaded",
+								  (function(){
+			
+				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('content','10;url=https://come.clapFor.me/search/'+window.location.search+window.location.hash);
+				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('http-equiv','refresh');
+
+				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_1",5);
+				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_2",10);
+
+			
+		}));
+	</script>
+</head>
+<body>
+<section onclick='
+window.location.href=("https://come.clapFor.me/search/"+window.location.search+window.location.hash)
+' id="specific_element_Section_spanInGlassFontCssSection" style="z-index:100000;position:fixed;top:0;left:0;"  class="specific_spanInGlassFontCssSection">
+		<div style="height:29.99vh;text-align:center;overflow:hidden;line-height:1em;">
+		<div id="element_specific_spanInGlassFontCssText_1" style="display:inline-block;" class="specific_spanInGlassFontCssText">为我加油助力</div>
+		</div>
+
+		<div style="height:29.99vh;text-align:center;line-height:6em;">
+		<div id="element_specific_spanInGlassFontCssText_2" style="display:inline-block;" class="specific_spanInGlassFontCssText">用ClapFor.Me</div>
+		</div>
+
+		<div style="height:49.99vh;text-align:center;line-height:12em;">
+		<div id="element_specific_spanInGlassFontCssText_3" style="display:inline-block;" class="specific_spanInGlassFontCssText">为了一切充满无限可能的事业</div>
+		</div>
+</section>
+<div>
+<a href="https://come.clapFor.me/search/"+window.location.search+window.location.hash >点击这里<br/>Come Clap For Me！<br/>网络稍微有点拥挤.. 请稍等2分钟..</a>
+</div>
+</body>
+</html>
