@@ -223,9 +223,10 @@ text.innerHTML = newText;
 <link rel="prefetch" href="https://come.clapfor.me/search/support/audio/prizeCoinGetAudioEffect_1.wav" as="audio" importance="low" type="audio/wav" />
 
 <meta id="specific_meta_equiv_forLinkJumpToV1" http-equiv="refresh" content="10;url=https://come.clapFor.me/search/">
-	<script>
-		document.addEventListener("DOMContentLoaded",
-								  (function(){
+<script>
+	
+function function_specificFor_DOMContentLoaded()
+{
 			
 				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('content','10;url=https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('http-equiv','refresh');
@@ -237,8 +238,17 @@ text.innerHTML = newText;
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_2",10);
 
 			
-		}));
-	</script>
+}
+	
+if (document.readyState === 'loading') {  // 此时加载尚未完成
+document.addEventListener('DOMContentLoaded', function_specificFor_DOMContentLoaded);
+} else {  // 此时`DOMContentLoaded` 已经被触发
+  function_specificFor_DOMContentLoaded();
+}
+
+
+
+</script>
 </head>
 <body>
 <section onclick='
@@ -257,14 +267,18 @@ window.location.href=("https://come.clapFor.me/search/"+window.location.search+(
 		</div>
 </section>
 <div>
+
+<p>
 <h2>
 ClapFor.me是世界上最先进的非中心化事业支持平台
 </h2>
+
 <h4>
 任何人都可以自由的发起有趣的事业，也可以松散的入股支持钟意的项目，并朴实的从中获取未来持续的回馈收益。
 </h4>
 <br/>
 <a id="element_a_t2" href="https://come.clapFor.me/search/"+window.location.search+window.location.hash >点击这里<br/>Come Clap For Me！<br/>网络稍微有点拥挤.. 请稍等2分钟..</a>
+</p>
 </div>
 </body>
 </html>
