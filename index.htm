@@ -233,6 +233,8 @@ function function_specificFor_DOMContentLoaded()
 				
 				document.getElementById('element_a_t2').setAttribute('href','https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				
+				//setTimeout(window.location.replace.bind('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash)),8000);
+				setTimeout(function(){window.location.replace('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));},8000);
 				
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_1",5);
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_2",10);
