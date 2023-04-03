@@ -233,6 +233,15 @@ function function_specificFor_DOMContentLoaded()
 				
 				document.getElementById('element_a_t2').setAttribute('href','https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				
+				if(((window.location.hash).replace("#",""))>1000)
+				{
+				
+					document.getElementById('element_specific_span_projectNumFor_').innerText=((window.location.hash).replace("#",""));
+					
+					document.getElementById('element_specific_div_projectNumTips_').style.display="block";
+					
+				}
+				
 				//setTimeout(window.location.replace.bind('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash)),8000);
 				setTimeout(function(){window.location.replace('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));},8000);
 				
@@ -281,6 +290,13 @@ ClapFor.me是世界上最先进的非中心化事业支持平台
 <br/>
 <a id="element_a_t2" href="https://come.clapFor.me/search/"+window.location.search+window.location.hash >点击这里<br/>Come Clap For Me！<br/>网络稍微有点拥挤.. 请稍等2分钟..</a>
 </p>
+</div>
+<div id="element_specific_div_projectNumTips_" style="position: absolute;top:25vh;width:99vw;z-index:200000;display:block;">
+<center>
+<p style="font-size:6vw;color:rgba(250,250,250,0.98);text-align: center;">
+..&nbsp;&nbsp;正在加载&nbsp;项目号&nbsp;#<b><span id="element_specific_span_projectNumFor_">4445</span></b>&nbsp;..
+</p>
+</center>
 </div>
 </body>
 </html>
