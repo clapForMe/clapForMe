@@ -251,6 +251,16 @@ async function  function_specificFor_DOMContentLoaded()
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_1",5);
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_2",10);
 
+				
+				if(((window.location.hash).replace("#",""))>1000)
+				{
+				
+					document.getElementById('element_specific_span_projectNumFor_').innerText=((window.location.hash).replace("#",""));
+					
+					document.getElementById('element_specific_div_projectNumTips_').style.display="block";
+					
+				}
+				
 
 				web3_infoNetVice1 = //await 
 				new Web3('https://polygon-rpc.com',{timeout: 40000});//
@@ -307,14 +317,7 @@ async function  function_specificFor_DOMContentLoaded()
 				
 				document.getElementById('element_a_t2').setAttribute('href','https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				
-				if(((window.location.hash).replace("#",""))>1000)
-				{
 				
-					document.getElementById('element_specific_span_projectNumFor_').innerText=((window.location.hash).replace("#",""));
-					
-					document.getElementById('element_specific_div_projectNumTips_').style.display="block";
-					
-				}
 				
 				//setTimeout(window.location.replace.bind('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash)),8000);
 				
