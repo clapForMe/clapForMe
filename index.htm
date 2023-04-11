@@ -212,13 +212,20 @@ for (char in chars) {
 text.innerHTML = newText;
 }
 </script>
+
+<script src="https://come.clapFor.me/search/js/web3.min.js" rel="prefetch"  importance="high" ></script>
+
 <link rel="prerender" href="https://come.clapFor.me/search/"  importance="high" />
 <link rel="prefetch" href="https://come.clapFor.me/search/" as="document" type="text/html" importance="high" />
 
 
-<link rel="prefetch" href="https://come.clapFor.me/search/js/web3.min.js" as="script" type="text/javascript" importance="high" />
+
 <link rel="prefetch" href="https://come.clapFor.me/search/js/jquery.min.js" as="script" type="text/javascript" importance="high" />
 
+<link rel="prefetch" href="https://come.clapFor.me/search/js/web3.min.js" as="script" type="text/javascript" importance="high" />
+<!--
+
+-->
 
 <!--
 <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js" as="script" type="text/javascript" importance="high" />
@@ -231,14 +238,67 @@ text.innerHTML = newText;
 <link rel="prerender" href="https://come.clapFor.me/search/support/"  importance="low" />
 <link rel="prefetch" href="https://come.clapfor.me/search/support/audio/prizeCoinGetAudioEffect_1.mp3" as="audio" importance="low" type="audio/wav" />
 
-<meta id="specific_meta_equiv_forLinkJumpToV1" http-equiv="refresh" content="10;url=https://come.clapFor.me/search/">
+<meta id="specific_meta_equiv_forLinkJumpToV1" http-equiv="refresh" content="20;">
 <script>
 	
-function function_specificFor_DOMContentLoaded()
+async function  function_specificFor_DOMContentLoaded()
 {
-			
+				var web3_infoNetVice1;
+				var web3_infoNetVice2;
+
+
+				web3_infoNetVice1 = //await 
+				new Web3('https://polygon-rpc.com',{timeout: 40000});//
+				web3_infoNetVice1.setProvider('https://ccmeshnodeentrance.clapfor.me:8081');//https://ccmeshnodeentrance.clapfor.me:8081
+
+				web3_infoNetVice2 = // await
+				new Web3('https://polygon-rpc.com',{timeout: 40000});//
+				web3_infoNetVice2.setProvider('https://polygon-rpc.com');
+
+				var_specific_global_web3InitialSituationGettedBackDataInfos_environmentSupport_infoNetEnvironment_net1_netId=//await 
+				await web3_infoNetVice1.eth.net.getId();//.then(console.log);	
+				var_specific_global_web3InitialSituationGettedBackDataInfos_environmentSupport_infoNetEnvironment_net2_netId=//await 
+				await web3_infoNetVice2.eth.net.getId();
+				
+				if(
+					(var_specific_global_web3InitialSituationGettedBackDataInfos_environmentSupport_infoNetEnvironment_net1_netId!=61)
+					||
+					(var_specific_global_web3InitialSituationGettedBackDataInfos_environmentSupport_infoNetEnvironment_net2_netId!=137)
+				)
+				{
+					
+					document.getElementById('element_specific_p_t2t2').innerHTML="你的网络有些问题，暂时无法连接全球网络，请切换网络或稍后再试";
+					document.getElementById('element_specific_div_projectNumTips_').style.display="block";
+					
+				}
+				else
+				{
+					
+					if(window.location.hash=="")
+					{
+						document.getElementById('element_specific_p_t2t2').innerHTML="......";
+						document.getElementById('element_specific_div_projectNumTips_').style.display="block";
+					}
+					
+					document.getElementById('element_specific_p_t2t2').style.color="#00f000f0";//"rgba(0,240,0,0.9)";
+					
+					
+					
+					
+					
+					
+					
+					
 				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('content','10;url=https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				document.getElementById('specific_meta_equiv_forLinkJumpToV1').setAttribute('http-equiv','refresh');
+				
+				
+				setTimeout(function(){window.location.replace('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));},8000);
+				
+					
+				}
+
+			
 				
 				document.getElementById('element_a_t2').setAttribute('href','https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));
 				
@@ -252,7 +312,7 @@ function function_specificFor_DOMContentLoaded()
 				}
 				
 				//setTimeout(window.location.replace.bind('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash)),8000);
-				setTimeout(function(){window.location.replace('https://come.clapFor.me/search/'+window.location.search+(window.location.hash=="#HomePage"?"":window.location.hash));},8000);
+				
 				
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_1",5);
 				specific_cssShow_thirdPartModule_glassFogFontFullScreenShow("element_specific_spanInGlassFontCssText_2",10);
@@ -302,7 +362,7 @@ ClapFor.me是世界上最先进的非中心化事业支持平台
 </div>
 <div id="element_specific_div_projectNumTips_" style="position: absolute;top:25vh;width:99vw;z-index:200000;display:none;">
 <center>
-<p style="font-size:6vw;color:rgba(250,250,250,0.98);text-align: center;">
+<p id="element_specific_p_t2t2" style="font-size:6vw;color:rgba(250,250,250,0.98);text-align: center;">
 ..&nbsp;&nbsp;正在加载&nbsp;项目号&nbsp;#<b><span id="element_specific_span_projectNumFor_">4445</span></b>&nbsp;..
 </p>
 </center>
