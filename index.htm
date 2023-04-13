@@ -215,14 +215,18 @@ text.innerHTML = newText;
 
 <script src="https://come.clapFor.me/search/js/web3.min.js" rel="prefetch"  importance="high" ></script>
 
-<link rel="prerender" href="https://come.clapFor.me/search/"  importance="high" />
 <link rel="prefetch" href="https://come.clapFor.me/search/" as="document" type="text/html" importance="high" />
+<link rel="prerender" href="https://come.clapFor.me/search/"  importance="high" />
+
 
 
 
 <link rel="prefetch" href="https://come.clapFor.me/search/js/jquery.min.js" as="script" type="text/javascript" importance="high" />
 
 <link rel="prefetch" href="https://come.clapFor.me/search/js/web3.min.js" as="script" type="text/javascript" importance="high" />
+
+
+<link rel="prefetch" href="https://come.clapFor.me/search/js/qrcode/qrcode.js" as="script" type="text/javascript"  />
 <!--
 
 -->
@@ -248,7 +252,7 @@ var varIf_ifAlready_functionScript_specific_windowOnloadListening=false;
 async function  function_specificFor_DOMContentLoaded()
 {
 
-				
+				//防止单线程多次触发调用
 				if(varIf_ifAlready_functionScript_specific_windowOnloadListening==true)
 				{
 					return true;
